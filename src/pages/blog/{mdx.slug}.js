@@ -27,7 +27,7 @@ const BlogPost = ({ data }) => {
     </Layout>
   )
   }
-export const query = graphql`
+  export const query = graphql`
   query($slug: String) {
     mdx(slug: {eq: $slug}) {
       body
@@ -45,5 +45,7 @@ export const query = graphql`
       }
     }
   }
+  `
+  
 
 export default BlogPost
